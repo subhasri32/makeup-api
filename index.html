@@ -1,0 +1,90 @@
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Makeup</title>
+        <style>
+.product-container{ 
+  display:flex;
+  gap:0.5rem;
+  
+}
+.image{
+  border-radius:50%;
+  padding:50px;
+  transition:transform;
+  /* background:white; */
+}
+.image:hover{
+  transform:scale(2);
+}
+table{
+  width:100%;
+  background:url("https://thumbs.dreamstime.com/z/panorama-beautiful-green-forest-summer-nature-scenery-yellow-wild-flowers-panorama-beautiful-green-forest-landscape-131579660.jpg")
+  background-repeat:no-repeat;
+  opacity:0.5rem;
+  background: rgb(9,9,121);
+background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(82,158,139,0.21610642548034842) 100%, rgba(2,0,36,1) 100%, rgba(103,255,0,0.8323529240797882) 100%); 
+}
+table a{
+  color:rgb(58,1,12);
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+/* .details{
+  text-align:left;
+  margin-left:0.5rem;
+} */
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+    </head>
+    <body>
+        <!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<form class="example">  
+  <input  type="text" id="mytext"  placeholder="Search by product name.." name="search">
+  <button type="submit" onclick="searchProduct()"><i class="fa fa-search"></i></button>
+</form>
+
+<section class="product-list">
+  
+</section>
+<script src="makeup.js">
+    </script>
+    </body>
